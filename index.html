@@ -1,0 +1,69 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Jogo da velha">
+		<meta name="keyword" content="aula, html5, css, javascript">
+		<meta name="author" content="Igor | rogibts@gmail.com">
+		<title>Jogo da Velha</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<script type="text/javascript" src="js/gameLoop.js"></script>
+		<!-- FONTES DO SITE -->
+		<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet"> 
+	</head>
+<body>
+<div class="tudo">
+	<header class="topo"></header>
+			<nav class="menuH">
+				<ul class="listaMenu">
+					<li class="itemMenu"><a href="sobre.html" target="_self" title="Conheça o  Desenvolvedor...">Sobre</a></li>
+					<li class="itemMenu"><a href="index.html" title="Conheça o  jogo...">Jogar</a></li>
+					<li class="itemMenu"><a href="contato.html" title="Entre em contato...">Contato</a></li>
+				</ul>
+			</nav>
+	<div class="conteudo">
+	<div class="placar">
+		<!--<div class="j1"><p id="player1">Player 1</p></div>
+		<div class="j1" ><p id="xpontos">0</p></div>
+		<div class="jx">X</div>
+		<div class="j2"><p id="player2">Player 2</p></div>
+		<div class="j2"><p id="opontos">0</p></div>-->
+		</center>
+		<div class="placar">
+			<div class="j1" id="player1">0</div>
+			<div class="jx">X</div>
+			<div class="j2" id="player2">0</div>
+		</div>
+		
+		<div class="">
+			<div class="inputs">
+				
+			</div>
+		</div>
+	</div>
+	
+	<div class="boxJogo">
+		<form name="gameLoop" class="qqrcoisa" method="post">
+				<input type="button" name="sqr1" class="jogo" onclick="rodada(this);">
+				<input type="button" name="sqr2" class="jogo" onclick="rodada(this);">
+				<input type="button" name="sqr3" class="jogo" onclick="rodada(this);">
+				<br>
+				<input type="button" name="sqr4" class="jogo" onclick="rodada(this);">
+				<input type="button" name="sqr5" class="jogo" onclick="rodada(this);">
+				<input type="button" name="sqr6" class="jogo" onclick="rodada(this);">
+				<br>
+				<input type="button" name="sqr7" class="jogo" onclick="rodada(this);">
+				<input type="button" name="sqr8" class="jogo" onclick="rodada(this);">
+				<input type="button" name="sqr9" class="jogo" onclick="rodada(this);">
+			</form>
+		 
+	</div>
+	</div>
+		<script type="text/javascript">
+			reset();
+		</script>
+	</div>
+	<footer class="rodape">Todos os direitos reservados.</footer>
+</body>
+</html>
